@@ -3,7 +3,7 @@ let computerScore = 0;
 let currentRoundNumber = 1;
 
 const generateTarget = () => {
-    return Math.floor(Math.random() * 10);
+    return Math.floor(Math.random() * 100) + 1;
 }
 const compareGuesses = (humanGuess, computerGuess, targetGuess) => {
     const humanDifference = Math.abs(targetGuess - humanGuess)
